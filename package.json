@@ -1,0 +1,30 @@
+{
+  "name": "mist-18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IEEEDTU/MIST-18.git"
+  },
+  "author": "IEEE-DTU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IEEEDTU/MIST-18/issues"
+  },
+  "homepage": "https://github.com/IEEEDTU/MIST-18#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "firebase": "^5.2.0",
+    "firebaseui": "^3.1.1",
+    "nodemon": "^1.17.5",
+    "parser": "^0.1.4"
+  }
+}
