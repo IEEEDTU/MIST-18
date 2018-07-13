@@ -1,13 +1,8 @@
-const express = require('express');
-const port = process.env.PORT || 3000;
-const ip = process.env.IP || '127.0.0.1';
-//const firebase = require('firebase');
-//const auth = firebase.auth();
-// Initialize Firebase
-app = express();
+var express = require("express");
+
+var app =express();
 app.use(express.static('static'));
-//docu: https://developers.google.com/identity/sign-in/web/server-side-flow but first id token withdraw karne hain
-/*const {google} = require('googleapis'); //docu: https://developers.google.com/identity/sign-in/web/server-side-flow but first id token withdraw karne hain
+/*const {google} = require('googleapis');
 
 const {OAuth2Client} = require('google-auth-library');
 const client = new OAuth2Client("447098100789-kqupm7m5u8uvf5sevr5efnvuitp6m9hm.apps.googleusercontent.com");
@@ -25,6 +20,4 @@ async function verify() {
 verify().catch(console.error);
 */
 //for authenication ^
-app.listen(port,ip,function () {
-    console.log("listening to port : "+ port );
-});
+app.listen(3000, () => console.log('App listening on port 3000!'));
