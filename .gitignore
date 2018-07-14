@@ -18,4 +18,8 @@ config/database.js
 config/auth.js
 
 google-secrets.json
+firebase.json
 
+package-lock.json
+
+.idea

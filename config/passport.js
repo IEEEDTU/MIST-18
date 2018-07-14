@@ -46,8 +46,13 @@ module.exports = function(passport) {
                         return done(err);
 
                     if (user) {
-                                console.log(profile.name);
-
+                        //to save user info to database
+                                console.log("logged user :"+profile._json.picture);
+                                console.log("Username : " + profile.displayName);
+                                console.log("Email :" + profile.emails[0].value);
+                                console.log("token :"+ token);
+                                console.log("refreshToken :"+refreshToken);
+                                console.log("User obj :"+ user);
                         // if there is a user id already but no token (user was linked at one point and then removed)
                         if (!user.google.token) {
                             user.google.token = token;
@@ -83,6 +88,12 @@ module.exports = function(passport) {
             } else {
                 // user already exists and is logged in, we have to link accounts
                 var user = req.user; // pull the user out of the session
+                console.log("logged in user"+profile._json.picture);
+                console.log("Username : " + profile.displayName);
+                console.log("Email :" + profile.emails[0].value);
+                console.log("token :"+ token);
+                console.log("refreshToken :"+refreshToken);
+                console.log("Uid :"+ user);
 
                 user.google.id    = profile.id;
                 user.google.token = token;
