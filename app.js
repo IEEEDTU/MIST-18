@@ -20,5 +20,5 @@ async function verify() {
 verify().catch(console.error);
 */
 //for authenication ^
-//after get the user info json data from this filehttps://www.googleapis.com/oauth2/v3/tokeninfo?id_token={token}
+//after get the user info json data from this file https://www.googleapis.com/oauth2/v3/tokeninfo?id_token={token}
 app.listen(3000, () => console.log('App listening on port 3000!'));
