@@ -1,0 +1,1 @@
+https://github.com/scotch-io/easy-node-authentication.git 
